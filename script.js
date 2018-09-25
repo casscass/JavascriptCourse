@@ -195,7 +195,7 @@ if (BMImark > BMIjohn) {
 /*****************************
 * Boolean Logic
 */
-
+/*
 let firstName = 'John';
 let age = 20;
 
@@ -208,7 +208,84 @@ if (age < 13) {
 } else {
   console.log(firstName + " " + "is a man");
 }
+*/
 
 /*****************************
 * FIZZ BUZZ
 */
+
+
+// Print out numbers 1 to 100
+// Replace all numbers divisible by 3 with “fizz”
+// Replace all numbers divisible by 5 with “buzz”
+// replace all numbers divisible by both 3 and 5 with “fizzbuzz”
+
+/*
+let fizzBuzzGame = function(){
+let arr = []
+for (let i=1; arr.length <100; i++) {
+  // Replace all numbers divisible by 3 with “fizz”
+  if (i % 3 === 0 && i % 5 === 0) {
+    arr.push('fizz buzz')
+ } else if (i % 3 === 0) {
+  arr.push('fizz')
+  } else if (i % 5 === 0) {
+    arr.push('buzz')
+  }
+  arr.push(i)
+} 
+return arr
+}
+
+console.log(fizzBuzzGame());
+*/
+
+/*****************************
+* The Ternary Operator and Switch Statment
+*/
+
+let firstName = 'Jane';
+let age = 23;
+
+// Ternary Operator
+age >= 18 ? console.log(firstName + ' can drink ') : console.log(firstName + ' is too young to drink ')
+
+let drink = age >= 18 ? 'beer' : 'juice';
+console.log(drink);
+
+if (age >= 18) {
+  let drink = 'beer';
+} else {
+  let drink = 'juice';
+}
+console.log(drink);
+
+// Switch Statment can be cleaner than a if else
+let job = 'cop';
+// switch (job) {
+//   case 'teacher': 
+//   case 'instructor':
+//     console.log(firstName + " Teaches people to code.");
+//     break;
+//   case 'driver':
+//     console.log(firstName + " drives Uber in Sydney.");
+//     break;
+//   case 'designer':
+//     console.log(firstName + " designes beautiful websites.");
+//     break;
+//   default:
+//     console.log(firstName + " does something else.");
+// }
+
+// If else
+if (job = 'instructor' || 'teacher') {
+  console.log(firstName + " Teaches people to code.");
+} else if (job = 'driver') {
+  console.log(firstName + " drives Uber in Sydney.");
+} else if (job = 'designer') {
+  console.log(firstName + " designes beautiful websites.");
+} else if (job = 'driver') {
+  console.log(firstName + " drives Uber in Sydney.");
+} else  {
+  console.log(firstName + " does something else.");
+} 
